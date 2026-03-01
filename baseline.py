@@ -77,6 +77,7 @@ def needleman_wunsch(seq_a, seq_b, match=2, mismatch=-1, gap_open=-10, gap_exten
 # ── Configuration ────────────────────────────────────────────────────────────
 
 DATA_PATH = "/Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Kaggle/stanford-rna-3d-folding-2/data"
+KAGGLE_DATA_PATH = "/kaggle/input/competitions/stanford-rna-3d-folding-2"  # actual mount path on Kaggle
 OUT_PATH  = "/Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Kaggle/stanford-rna-3d-folding-2"
 
 class Config:
