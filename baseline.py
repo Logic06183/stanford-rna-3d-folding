@@ -15,10 +15,64 @@ warnings.filterwarnings("ignore", category=BiopythonDeprecationWarning if False 
 
 import numpy as np
 import pandas as pd
-from Bio.Seq import Seq
-from Bio import pairwise2
 from scipy.spatial.transform import Rotation
 from scipy.spatial.distance import pdist, squareform
+
+# ── Pure-Python Needleman-Wunsch (replaces Bio.pairwise2) ───────────────────
+# Gotoh algorithm: global alignment with affine gap penalties O(nm) time/space
+
+def needleman_wunsch(seq_a, seq_b, match=2, mismatch=-1, gap_open=-10, gap_extend=-0.5):
+    """
+    Global sequence alignment with affine gap penalties (Gotoh 1982).
+    Returns (aligned_a, aligned_b, score).
+
+    Three DP matrices:
+      M[i,j] = best score when seq_a[i-1] and seq_b[j-1] are aligned
+      X[i,j] = best score with a gap in seq_b (deletion in b)
+      Y[i,j] = best score with a gap in seq_a (insertion in b)
+    """
+    n, m = len(seq_a), len(seq_b)
+    NEG_INF = float('-inf')
+
+    M = np.full((n+1, m+1), NEG_INF)
+    X = np.full((n+1, m+1), NEG_INF)
+    Y = np.full((n+1, m+1), NEG_INF)
+
+    M[0, 0] = 0.0
+    for i in range(1, n+1):
+        X[i, 0] = gap_open + (i-1) * gap_extend
+    for j in range(1, m+1):
+        Y[0, j] = gap_open + (j-1) * gap_extend
+
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            s = match if seq_a[i-1] == seq_b[j-1] else mismatch
+            M[i,j] = max(M[i-1,j-1], X[i-1,j-1], Y[i-1,j-1]) + s
+            X[i,j] = max(M[i-1,j] + gap_open, X[i-1,j] + gap_extend)
+            Y[i,j] = max(M[i,j-1] + gap_open, Y[i,j-1] + gap_extend)
+
+    score = max(M[n,m], X[n,m], Y[n,m])
+
+    # Traceback
+    a_aln, b_aln = [], []
+    i, j = n, m
+    state = np.argmax([M[n,m], X[n,m], Y[n,m]])  # 0=M, 1=X, 2=Y
+
+    while i > 0 or j > 0:
+        if state == 0:                             # came from M (match/mismatch)
+            a_aln.append(seq_a[i-1]); b_aln.append(seq_b[j-1])
+            prev = np.argmax([M[i-1,j-1], X[i-1,j-1], Y[i-1,j-1]])
+            i -= 1; j -= 1; state = prev
+        elif state == 1:                           # came from X (gap in seq_b)
+            a_aln.append(seq_a[i-1]); b_aln.append('-')
+            state = 0 if M[i-1,j] + gap_open >= X[i-1,j] + gap_extend else 1
+            i -= 1
+        else:                                      # came from Y (gap in seq_a)
+            a_aln.append('-'); b_aln.append(seq_b[j-1])
+            state = 0 if M[i,j-1] + gap_open >= Y[i,j-1] + gap_extend else 2
+            j -= 1
+
+    return ''.join(reversed(a_aln)), ''.join(reversed(b_aln)), score
 
 # ── Configuration ────────────────────────────────────────────────────────────
 
@@ -109,20 +163,19 @@ def secondary_structure_filter(seq_a, seq_b, min_bp=2):
 
 def compute_alignment_score(query_seq, template_seq):
     """
-    Global Needleman-Wunsch alignment. Returns (alignment, normalised_score).
+    Global Needleman-Wunsch alignment (pure Python, no biopython).
+    Returns ((aligned_query, aligned_template), normalised_score).
     Score is normalised by 2×min_length so it's in roughly [0, 1].
     """
-    alignments = pairwise2.align.globalms(
-        Seq(query_seq), template_seq,
-        Config.ALIGNMENT_MATCH, Config.ALIGNMENT_MISMATCH,
-        Config.ALIGNMENT_GAP_OPEN, Config.ALIGNMENT_GAP_EXTEND,
-        one_alignment_only=True
+    a_aln, b_aln, raw_score = needleman_wunsch(
+        query_seq, template_seq,
+        match=Config.ALIGNMENT_MATCH,
+        mismatch=Config.ALIGNMENT_MISMATCH,
+        gap_open=Config.ALIGNMENT_GAP_OPEN,
+        gap_extend=Config.ALIGNMENT_GAP_EXTEND,
     )
-    if not alignments:
-        return None, 0.0
-    aln   = alignments[0]
-    score = aln.score / (2 * min(len(query_seq), len(template_seq)))
-    return aln, score
+    norm_score = raw_score / (2 * min(len(query_seq), len(template_seq)))
+    return (a_aln, b_aln), norm_score
 
 def find_comparable_seqs(query_seq, template_df, struct_dict, date_cutoff=None, top_k=5):
     """
@@ -173,8 +226,7 @@ def morph_template(dest_seq, source_seq, source_coords):
     if alignment is None:
         return make_de_novo_structure(dest_seq)
 
-    aligned_dest   = str(alignment.seqA)
-    aligned_source = str(alignment.seqB)
+    aligned_dest, aligned_source = alignment
 
     morphed = np.full((len(dest_seq), 3), np.nan, dtype=np.float32)
     d_i = s_i = 0
