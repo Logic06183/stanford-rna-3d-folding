@@ -1,0 +1,18 @@
+# ── Kaggle competition data (download via: kaggle competitions download) ──────
+data/
+
+# ── Generated submission files ────────────────────────────────────────────────
+submission*.csv
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── Secrets — never commit API tokens ────────────────────────────────────────
+.env
+kaggle.json
