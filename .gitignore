@@ -4,6 +4,9 @@ data/
 # ── Generated submission files ────────────────────────────────────────────────
 submission*.csv
 
+# ── Dataset directory (keep metadata, ignore large CSVs) ─────────────────────
+dataset/*.csv
+
 # ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.pyc

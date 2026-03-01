@@ -19,7 +19,6 @@ KAGGLE=/opt/anaconda3/bin/kaggle
 COMPETITION=stanford-rna-3d-folding-2
 KERNEL_SLUG=craigparker/rna-3d-baseline-tbm
 KERNEL_DIR="$(dirname "$0")/kernel"
-NOTEBOOK_SRC="$(dirname "$0")/notebooks/baseline_kaggle.ipynb"
 MESSAGE="${1:-Baseline TBM auto-submit}"
 
 # ── Colours ───────────────────────────────────────────────────────────────────
@@ -28,37 +27,36 @@ log()   { echo "${GREEN}[submit]${NC} $*"; }
 warn()  { echo "${YELLOW}[submit]${NC} $*"; }
 error() { echo "${RED}[submit]${NC} $*"; exit 1; }
 
-# ── Step 1: Sync latest notebook ─────────────────────────────────────────────
-log "Syncing notebook to kernel directory..."
-cp "$NOTEBOOK_SRC" "$KERNEL_DIR/baseline_kaggle.ipynb"
-log "  kernel/ now contains:"
-ls -lh "$KERNEL_DIR"
-
-# ── Step 2: Push kernel to Kaggle ─────────────────────────────────────────────
+# ── Step 1: Push kernel to Kaggle, capture version number ─────────────────────
 log "Pushing kernel to Kaggle..."
-KAGGLE_API_TOKEN=$KAGGLE_API_TOKEN $KAGGLE kernels push -p "$KERNEL_DIR"
-log "  Kernel pushed: $KERNEL_SLUG"
-log "  Kaggle will now run it on their servers (~5–15 min for CPU baseline)"
+PUSH_OUTPUT=$(KAGGLE_API_TOKEN=$KAGGLE_API_TOKEN $KAGGLE kernels push -p "$KERNEL_DIR" 2>&1)
+echo "$PUSH_OUTPUT"
+VERSION=$(echo "$PUSH_OUTPUT" | grep -oE 'version [0-9]+' | grep -oE '[0-9]+' | tail -1)
+if [ -z "$VERSION" ]; then
+    error "Could not parse version number from push output: $PUSH_OUTPUT"
+fi
+log "  Kernel v${VERSION} pushed: $KERNEL_SLUG"
+log "  Kaggle will now run it on their servers (~15–25 min for CPU baseline)"
 
-# ── Step 3: Poll until complete ───────────────────────────────────────────────
+# ── Step 2: Poll until complete ───────────────────────────────────────────────
 log "Waiting for kernel to finish (polling every 30s)..."
 DOTS=0
 while true; do
     STATUS=$(KAGGLE_API_TOKEN=$KAGGLE_API_TOKEN $KAGGLE kernels status "$KERNEL_SLUG" 2>&1)
     # Status is one of: running, complete, error, cancelAcknowledged, queued
-    if echo "$STATUS" | grep -q "complete"; then
+    if echo "$STATUS" | grep -qi "complete"; then
         echo ""
         log "Kernel finished successfully!"
         break
-    elif echo "$STATUS" | grep -q "error"; then
+    elif echo "$STATUS" | grep -qi "error"; then
         echo ""
         error "Kernel failed with error. Check: https://www.kaggle.com/code/$KERNEL_SLUG"
-    elif echo "$STATUS" | grep -q "running\|queued"; then
+    elif echo "$STATUS" | grep -qi "running\|queued"; then
         printf "."
         DOTS=$((DOTS+1))
         if [ $((DOTS % 20)) -eq 0 ]; then
             echo ""
-            warn "  Still running... (${DOTS} checks)"
+            warn "  Still running... (${DOTS} checks, ${DOTS} min)"
         fi
         sleep 30
     else
@@ -68,11 +66,12 @@ while true; do
     fi
 done
 
-# ── Step 4: Submit kernel output ─────────────────────────────────────────────
-log "Submitting kernel output to competition..."
+# ── Step 3: Submit kernel output ─────────────────────────────────────────────
+log "Submitting kernel v${VERSION} output to competition..."
 KAGGLE_API_TOKEN=$KAGGLE_API_TOKEN $KAGGLE competitions submit \
     "$COMPETITION" \
     --kernel "$KERNEL_SLUG" \
+    -v "$VERSION" \
     --file  "submission.csv" \
     --message "$MESSAGE"
 

@@ -462,7 +462,7 @@ for m in range(1, Config.NUM_PREDICTIONS + 1):
         cols.append(f'{ax}_{m}')
 
 submission = pd.DataFrame(records)[cols]
-out_file   = f"{OUT_PATH}/submission_baseline.csv"
+out_file   = f"{OUT_PATH}/submission.csv"
 submission.to_csv(out_file, index=False)
 
 print(f"\nSaved {len(submission)} rows → {out_file}")
