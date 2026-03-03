@@ -5,10 +5,15 @@
   "language": "python",
   "kernel_type": "notebook",
   "is_private": false,
-  "enable_gpu": false,
+  "enable_gpu": true,
   "enable_tpu": false,
   "enable_internet": false,
-  "dataset_sources": [],
+  "dataset_sources": [
+    "qiweiyin/protenix-v1-adjusted",
+    "kami1976/biopython-cp312",
+    "amirrezaaleyasin/biotite",
+    "amirrezaaleyasin/rdkit-2025-9-5"
+  ],
   "competition_sources": ["stanford-rna-3d-folding-2"],
   "kernel_sources": [],
   "model_sources": []
