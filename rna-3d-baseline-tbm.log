@@ -1,0 +1,388 @@
+[{"stream_name":"stderr","time":6.711844173,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.7119116739999996,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.711916439,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.711918955,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.336851843,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.336882551,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.33688749,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.336891274,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.611769021,"data":"=== /kaggle/input contents ===\n"}
+,{"stream_name":"stdout","time":8.61180939,"data":"  biopython-cp312\n"}
+,{"stream_name":"stdout","time":8.611815187,"data":"  biotite\n"}
+,{"stream_name":"stdout","time":8.611819321,"data":"  competitions\n"}
+,{"stream_name":"stdout","time":8.611822921,"data":"  protenix-v1-adjusted\n"}
+,{"stream_name":"stdout","time":8.611827252,"data":"  rdkit-2025-9-5\n"}
+,{"stream_name":"stdout","time":8.611831332,"data":"\n"}
+,{"stream_name":"stdout","time":8.611834624,"data":"Locating wheels...\n"}
+,{"stream_name":"stdout","time":8.611838163,"data":"  Found: /kaggle/input/biopython-cp312/biopython-1.86-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":8.611841996,"data":"  Found: /kaggle/input/biotite/biotite-1.6.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":8.611845703,"data":"  Found: /kaggle/input/rdkit-2025-9-5/rdkit-2025.9.5-cp312-cp312-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":8.611849309,"data":"\n"}
+,{"stream_name":"stdout","time":8.611852504,"data":"Installing wheels...\n"}
+,{"stream_name":"stdout","time":8.611855988,"data":"  Installing biopython...\n"}
+,{"stream_name":"stdout","time":12.054746998,"data":"  OK\n"}
+,{"stream_name":"stdout","time":12.054788061,"data":"  Installing biotite...\n"}
+,{"stream_name":"stdout","time":15.560893859,"data":"  OK\n"}
+,{"stream_name":"stdout","time":15.560934024,"data":"  Installing rdkit...\n"}
+,{"stream_name":"stdout","time":18.62097683,"data":"  OK\n"}
+,{"stream_name":"stdout","time":18.621016928,"data":"Wheel installs done.\n"}
+,{"stream_name":"stdout","time":22.574618423,"data":"Protenix root      : /kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1\n"}
+,{"stream_name":"stdout","time":22.574652276,"data":"Checkpoint exists  : True\n"}
+,{"stream_name":"stdout","time":22.574658689,"data":"GPU               : True\n"}
+,{"stream_name":"stdout","time":22.574664081999998,"data":"  Tesla P100-PCIE-16GB  17.1GB\n"}
+,{"stream_name":"stdout","time":22.57468668,"data":"Data path         : /kaggle/input/competitions/stanford-rna-3d-folding-2\n"}
+,{"stream_name":"stdout","time":22.574694024,"data":"Protenix available: True\n"}
+,{"stream_name":"stdout","time":23.848400628,"data":"TBM functions loaded.\n"}
+,{"stream_name":"stdout","time":24.049238164,"data":"Loading data...\n"}
+,{"stream_name":"stdout","time":36.796641161,"data":"  Train: 5716 | Val: 28 | Test: 28\n"}
+,{"stream_name":"stdout","time":36.79672047,"data":"Building structure lookup...\n"}
+,{"stream_name":"stdout","time":51.907287159,"data":"  5744 structures (train+val) in 15.5s\n"}
+,{"stream_name":"stdout","time":51.907415399,"data":"Loaded in 28.0s\n"}
+,{"stream_name":"stdout","time":52.109135597,"data":"\n"}
+,{"stream_name":"stdout","time":52.109174543,"data":"── TBM Phase ───────────────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":57.476296687,"data":"  [ 1/28] 8ZNQ      len=   30  tmpl=5  sim=0.20  prot=2\n"}
+,{"stream_name":"stdout","time":83.265632739,"data":"  [ 2/28] 9IWF      len=   69  tmpl=5  sim=0.36  prot=2\n"}
+,{"stream_name":"stdout","time":153.282192901,"data":"  [ 3/28] 9JGM      len=  210  tmpl=5  sim=0.19  prot=2\n"}
+,{"stream_name":"stdout","time":155.111246596,"data":"  [ 4/28] 9MME      len= 4640  tmpl=0  sim=0.00  prot=5\n"}
+,{"stream_name":"stdout","time":225.013844708,"data":"  [ 5/28] 9J09      len=  214  tmpl=5  sim=0.05  prot=2\n"}
+,{"stream_name":"stdout","time":265.38580079,"data":"  [ 6/28] 9E9Q      len=  101  tmpl=5  sim=0.74\n"}
+,{"stream_name":"stdout","time":286.787154833,"data":"  [ 7/28] 9CFN      len=   59  tmpl=5  sim=0.17  prot=2\n"}
+,{"stream_name":"stdout","time":315.08819939,"data":"  [ 8/28] 9OBM      len=   73  tmpl=5  sim=0.13  prot=2\n"}
+,{"stream_name":"stdout","time":340.707116397,"data":"  [ 9/28] 9G4P      len=   68  tmpl=5  sim=0.12  prot=2\n"}
+,{"stream_name":"stdout","time":383.190685391,"data":"  [10/28] 9G4Q      len=  104  tmpl=5  sim=0.07  prot=2\n"}
+,{"stream_name":"stdout","time":397.713846438,"data":"  [11/28] 9G4R      len=   47  tmpl=5  sim=0.14  prot=2\n"}
+,{"stream_name":"stdout","time":404.765178536,"data":"  [12/28] 9RVP      len=   34  tmpl=5  sim=0.20  prot=2\n"}
+,{"stream_name":"stdout","time":482.169057316,"data":"  [13/28] 9JFS      len=  246  tmpl=5  sim=0.05  prot=2\n"}
+,{"stream_name":"stdout","time":586.790400361,"data":"  [14/28] 9LEC      len=  378  tmpl=5  sim=0.05  prot=2\n"}
+,{"stream_name":"stdout","time":730.068333767,"data":"  [15/28] 9LEL      len=  476  tmpl=5  sim=0.05  prot=2\n"}
+,{"stream_name":"stdout","time":734.80682729,"data":"  [16/28] 9I9W      len=   28  tmpl=5  sim=0.29  prot=2\n"}
+,{"stream_name":"stdout","time":742.530118756,"data":"  [17/28] 9HRO      len=   35  tmpl=5  sim=0.31  prot=2\n"}
+,{"stream_name":"stdout","time":744.506820402,"data":"  [18/28] 9QZJ      len=   19  tmpl=5  sim=0.45  prot=2\n"}
+,{"stream_name":"stdout","time":802.728797655,"data":"  [19/28] 9JFO      len=  195  tmpl=5  sim=0.09  prot=2\n"}
+,{"stream_name":"stdout","time":805.866238624,"data":"  [20/28] 9OD4      len=   23  tmpl=5  sim=0.15  prot=2\n"}
+,{"stream_name":"stdout","time":840.543357138,"data":"  [21/28] 9WHV      len=   80  tmpl=5  sim=0.25  prot=2\n"}
+,{"stream_name":"stdout","time":925.160740465,"data":"  [22/28] 9E74      len=  255  tmpl=5  sim=0.34  prot=2\n"}
+,{"stream_name":"stdout","time":979.333689349,"data":"  [23/28] 9E75      len=  165  tmpl=5  sim=0.42  prot=2\n"}
+,{"stream_name":"stdout","time":1078.02316823,"data":"  [24/28] 9G4J      len=  334  tmpl=5  sim=0.92\n"}
+,{"stream_name":"stdout","time":1165.243716863,"data":"  [25/28] 9KGG      len=  267  tmpl=5  sim=0.24  prot=2\n"}
+,{"stream_name":"stdout","time":1200.422342113,"data":"  [26/28] 9EBP      len=   81  tmpl=5  sim=0.11  prot=2\n"}
+,{"stream_name":"stdout","time":1227.919640016,"data":"  [27/28] 9LJN      len=   71  tmpl=5  sim=0.59\n"}
+,{"stream_name":"stdout","time":1228.281314803,"data":"  [28/28] 9ZCC      len= 1460  tmpl=0  sim=0.00  prot=5\n"}
+,{"stream_name":"stdout","time":1228.281376774,"data":"\n"}
+,{"stream_name":"stdout","time":1228.28138262,"data":"TBM done in 1176.4s  |  Protenix queue: 25\n"}
+,{"stream_name":"stdout","time":1228.313948909,"data":"Protenix functions loaded.\n"}
+,{"stream_name":"stdout","time":1228.482812806,"data":"\n"}
+,{"stream_name":"stdout","time":1228.482835714,"data":"── Protenix Phase ──────────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":1228.482841936,"data":"Skipping 2 very long sequences from Protenix (TBM de-novo used):\n"}
+,{"stream_name":"stdout","time":1228.482845824,"data":"  9MME: 4640 nt\n"}
+,{"stream_name":"stdout","time":1228.482849261,"data":"  9ZCC: 1460 nt\n"}
+,{"stream_name":"stdout","time":1228.482853312,"data":"Running Protenix batch: 23 short targets, n_gen=6...\n"}
+,{"stream_name":"stderr","time":1231.323809023,"data":"2026-03-03 14:36:04,989 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Distributed environment: world size: 1, global rank: 0, local rank: 0\n"}
+,{"stream_name":"stderr","time":1231.323838083,"data":"\n"}
+,{"stream_name":"stderr","time":1231.323843,"data":"2026-03-03 14:36:04,989 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Distributed environment: world size: 1, global rank: 0, local rank: 0\n"}
+,{"stream_name":"stderr","time":1231.324647052,"data":"2026-03-03 14:36:04,990 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:98] INFO root: LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]\n"}
+,{"stream_name":"stderr","time":1231.324662572,"data":"\n"}
+,{"stream_name":"stderr","time":1231.324666891,"data":"2026-03-03 14:36:04,990 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:98] INFO root: LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]\n"}
+,{"stream_name":"stderr","time":1231.458327044,"data":"2026-03-03 14:36:05,123 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:127] INFO root: Finished environment initialization.\n"}
+,{"stream_name":"stderr","time":1231.45835567,"data":"\n"}
+,{"stream_name":"stderr","time":1231.458368099,"data":"2026-03-03 14:36:05,123 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:127] INFO root: Finished environment initialization.\n"}
+,{"stream_name":"stdout","time":1231.660601029,"data":"train scheduler 16.0\n"}
+,{"stream_name":"stdout","time":1231.6606556,"data":"inference scheduler 16.0\n"}
+,{"stream_name":"stdout","time":1261.091570688,"data":"Diffusion Module has 16.0\n"}
+,{"stream_name":"stderr","time":1310.550500807,"data":"2026-03-03 14:37:24,211 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Loading from /kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/checkpoint/protenix_base_20250630_v1.0.0.pt, strict: True\n"}
+,{"stream_name":"stderr","time":1310.550532043,"data":"\n"}
+,{"stream_name":"stderr","time":1310.550537817,"data":"2026-03-03 14:37:24,211 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Loading from /kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/checkpoint/protenix_base_20250630_v1.0.0.pt, strict: True\n"}
+,{"stream_name":"stderr","time":1320.581301438,"data":"2026-03-03 14:37:34,241 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Sampled key: module.input_embedder.atom_attention_encoder.linear_no_bias_ref_pos.weight\n"}
+,{"stream_name":"stderr","time":1320.581366276,"data":"\n"}
+,{"stream_name":"stderr","time":1320.581374002,"data":"2026-03-03 14:37:34,241 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Sampled key: module.input_embedder.atom_attention_encoder.linear_no_bias_ref_pos.weight\n"}
+,{"stream_name":"stderr","time":1320.730470199,"data":"2026-03-03 14:37:34,386 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Finish loading checkpoint.\n"}
+,{"stream_name":"stderr","time":1320.730506401,"data":"\n"}
+,{"stream_name":"stderr","time":1320.730511349,"data":"2026-03-03 14:37:34,386 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Finish loading checkpoint.\n"}
+,{"stream_name":"stderr","time":1320.731345855,"data":"2026-03-03 14:37:34,396 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Model parameters: 368.48M\n"}
+,{"stream_name":"stderr","time":1320.731369506,"data":"\n"}
+,{"stream_name":"stderr","time":1320.731373451,"data":"2026-03-03 14:37:34,396 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/runner/inference.py:246] INFO runner.inference: Model parameters: 368.48M\n"}
+,{"stream_name":"stderr","time":1320.776486677,"data":"2026-03-03 14:37:34,442 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 8ZNQ...\n"}
+,{"stream_name":"stderr","time":1320.776520117,"data":"\n"}
+,{"stream_name":"stderr","time":1320.776526772,"data":"2026-03-03 14:37:34,442 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 8ZNQ...\n"}
+,{"stream_name":"stderr","time":1331.371714332,"data":"2026-03-03 14:37:45,037 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1331.371747119,"data":"\n"}
+,{"stream_name":"stderr","time":1331.371751234,"data":"2026-03-03 14:37:45,037 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1331.417788359,"data":"2026-03-03 14:37:45,083 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1331.417821214,"data":"\n"}
+,{"stream_name":"stderr","time":1331.417825964,"data":"2026-03-03 14:37:45,083 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1374.2655013,"data":"2026-03-03 14:38:27,921 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9IWF...\n"}
+,{"stream_name":"stderr","time":1374.265535775,"data":"\n"}
+,{"stream_name":"stderr","time":1374.265541839,"data":"2026-03-03 14:38:27,921 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9IWF...\n"}
+,{"stream_name":"stderr","time":1374.339987607,"data":"2026-03-03 14:38:28,005 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1374.340025759,"data":"\n"}
+,{"stream_name":"stderr","time":1374.340031497,"data":"2026-03-03 14:38:28,005 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1374.423378117,"data":"2026-03-03 14:38:28,088 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1374.423409612,"data":"\n"}
+,{"stream_name":"stderr","time":1374.423414442,"data":"2026-03-03 14:38:28,088 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":1374.443540765,"data":"  Protenix OK: 8ZNQ  shapes=(6, 30, 3)-\u003e(6, 30, 3)\n"}
+,{"stream_name":"stderr","time":1416.462231043,"data":"2026-03-03 14:39:10,118 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9JGM...\n"}
+,{"stream_name":"stderr","time":1416.462267918,"data":"\n"}
+,{"stream_name":"stderr","time":1416.462273609,"data":"2026-03-03 14:39:10,118 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9JGM...\n"}
+,{"stream_name":"stdout","time":1416.641486929,"data":"  Protenix OK: 9IWF  shapes=(6, 69, 3)-\u003e(6, 69, 3)\n"}
+,{"stream_name":"stderr","time":1416.761606497,"data":"2026-03-03 14:39:10,427 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1416.761641764,"data":"\n"}
+,{"stream_name":"stderr","time":1416.761647721,"data":"2026-03-03 14:39:10,427 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1417.083881648,"data":"2026-03-03 14:39:10,749 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1417.083935824,"data":"\n"}
+,{"stream_name":"stderr","time":1417.0839401,"data":"2026-03-03 14:39:10,749 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1490.030371877,"data":"2026-03-03 14:40:23,690 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9J09...\n"}
+,{"stream_name":"stderr","time":1490.030410731,"data":"\n"}
+,{"stream_name":"stderr","time":1490.030416541,"data":"2026-03-03 14:40:23,690 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9J09...\n"}
+,{"stream_name":"stdout","time":1490.193812455,"data":"  Protenix OK: 9JGM  shapes=(6, 210, 3)-\u003e(6, 210, 3)\n"}
+,{"stream_name":"stderr","time":1490.289388083,"data":"2026-03-03 14:40:23,954 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1490.289439947,"data":"\n"}
+,{"stream_name":"stderr","time":1490.289446045,"data":"2026-03-03 14:40:23,954 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1490.626453639,"data":"2026-03-03 14:40:24,292 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1490.626492044,"data":"\n"}
+,{"stream_name":"stderr","time":1490.626498657,"data":"2026-03-03 14:40:24,292 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1564.837643215,"data":"2026-03-03 14:41:38,497 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9CFN...\n"}
+,{"stream_name":"stderr","time":1564.837694992,"data":"\n"}
+,{"stream_name":"stderr","time":1564.837703336,"data":"2026-03-03 14:41:38,497 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9CFN...\n"}
+,{"stream_name":"stderr","time":1564.900474296,"data":"2026-03-03 14:41:38,566 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1564.900509362,"data":"\n"}
+,{"stream_name":"stderr","time":1564.900530234,"data":"2026-03-03 14:41:38,566 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1564.968819399,"data":"2026-03-03 14:41:38,634 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1564.968855905,"data":"\n"}
+,{"stream_name":"stderr","time":1564.968860946,"data":"2026-03-03 14:41:38,634 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":1564.988771622,"data":"  Protenix OK: 9J09  shapes=(6, 214, 3)-\u003e(6, 214, 3)\n"}
+,{"stream_name":"stderr","time":1606.470551426,"data":"2026-03-03 14:42:20,131 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9OBM...\n"}
+,{"stream_name":"stderr","time":1606.470583248,"data":"\n"}
+,{"stream_name":"stderr","time":1606.470589847,"data":"2026-03-03 14:42:20,131 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9OBM...\n"}
+,{"stream_name":"stderr","time":1606.550175109,"data":"2026-03-03 14:42:20,215 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1606.550210614,"data":"\n"}
+,{"stream_name":"stderr","time":1606.550217234,"data":"2026-03-03 14:42:20,215 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1606.640307789,"data":"2026-03-03 14:42:20,306 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1606.640339844,"data":"\n"}
+,{"stream_name":"stderr","time":1606.640344711,"data":"2026-03-03 14:42:20,306 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":1606.651162263,"data":"  Protenix OK: 9CFN  shapes=(6, 59, 3)-\u003e(6, 59, 3)\n"}
+,{"stream_name":"stderr","time":1648.017239867,"data":"2026-03-03 14:43:01,671 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9G4P...\n"}
+,{"stream_name":"stderr","time":1648.017273835,"data":"\n"}
+,{"stream_name":"stderr","time":1648.017278386,"data":"2026-03-03 14:43:01,671 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9G4P...\n"}
+,{"stream_name":"stderr","time":1648.089443664,"data":"2026-03-03 14:43:01,754 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1648.089477317,"data":"\n"}
+,{"stream_name":"stderr","time":1648.089482726,"data":"2026-03-03 14:43:01,754 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1648.15951865,"data":"2026-03-03 14:43:01,824 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1648.15955419,"data":"\n"}
+,{"stream_name":"stderr","time":1648.159558279,"data":"2026-03-03 14:43:01,824 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":1648.200398136,"data":"  Protenix OK: 9OBM  shapes=(6, 73, 3)-\u003e(6, 73, 3)\n"}
+,{"stream_name":"stderr","time":1689.435836815,"data":"2026-03-03 14:43:43,090 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9G4Q...\n"}
+,{"stream_name":"stderr","time":1689.435870305,"data":"\n"}
+,{"stream_name":"stderr","time":1689.435875835,"data":"2026-03-03 14:43:43,090 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9G4Q...\n"}
+,{"stream_name":"stderr","time":1689.542545936,"data":"2026-03-03 14:43:43,208 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1689.542576632,"data":"\n"}
+,{"stream_name":"stderr","time":1689.542582427,"data":"2026-03-03 14:43:43,208 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stdout","time":1689.623378895,"data":"  Protenix OK: 9G4P  shapes=(6, 68, 3)-\u003e(6, 68, 3)\n"}
+,{"stream_name":"stderr","time":1689.662169951,"data":"2026-03-03 14:43:43,327 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1689.662202728,"data":"\n"}
+,{"stream_name":"stderr","time":1689.662229935,"data":"2026-03-03 14:43:43,327 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1732.517395848,"data":"2026-03-03 14:44:26,171 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9G4R...\n"}
+,{"stream_name":"stderr","time":1732.517430128,"data":"\n"}
+,{"stream_name":"stderr","time":1732.517436487,"data":"2026-03-03 14:44:26,171 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9G4R...\n"}
+,{"stream_name":"stderr","time":1732.565582637,"data":"2026-03-03 14:44:26,230 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1732.565617172,"data":"\n"}
+,{"stream_name":"stderr","time":1732.565639116,"data":"2026-03-03 14:44:26,230 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1732.615791784,"data":"2026-03-03 14:44:26,281 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1732.615822658,"data":"\n"}
+,{"stream_name":"stderr","time":1732.615827277,"data":"2026-03-03 14:44:26,281 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":1732.6964113,"data":"  Protenix OK: 9G4Q  shapes=(6, 104, 3)-\u003e(6, 104, 3)\n"}
+,{"stream_name":"stderr","time":1773.381832998,"data":"2026-03-03 14:45:07,040 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9RVP...\n"}
+,{"stream_name":"stderr","time":1773.381865603,"data":"\n"}
+,{"stream_name":"stderr","time":1773.381871574,"data":"2026-03-03 14:45:07,040 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9RVP...\n"}
+,{"stream_name":"stderr","time":1773.413888618,"data":"2026-03-03 14:45:07,079 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1773.413914367,"data":"\n"}
+,{"stream_name":"stderr","time":1773.413920432,"data":"2026-03-03 14:45:07,079 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1773.447722341,"data":"2026-03-03 14:45:07,113 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1773.447760666,"data":"\n"}
+,{"stream_name":"stderr","time":1773.447764659,"data":"2026-03-03 14:45:07,113 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":1773.573658444,"data":"  Protenix OK: 9G4R  shapes=(6, 47, 3)-\u003e(6, 47, 3)\n"}
+,{"stream_name":"stderr","time":1816.210423334,"data":"2026-03-03 14:45:49,868 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9JFS...\n"}
+,{"stream_name":"stderr","time":1816.210462243,"data":"\n"}
+,{"stream_name":"stderr","time":1816.210469745,"data":"2026-03-03 14:45:49,868 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9JFS...\n"}
+,{"stream_name":"stdout","time":1816.397632339,"data":"  Protenix OK: 9RVP  shapes=(6, 34, 3)-\u003e(6, 34, 3)\n"}
+,{"stream_name":"stderr","time":1816.551581539,"data":"2026-03-03 14:45:50,216 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1816.551618197,"data":"\n"}
+,{"stream_name":"stderr","time":1816.551624721,"data":"2026-03-03 14:45:50,216 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1816.979497459,"data":"2026-03-03 14:45:50,644 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1816.979535393,"data":"\n"}
+,{"stream_name":"stderr","time":1816.979541746,"data":"2026-03-03 14:45:50,644 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1905.844288495,"data":"2026-03-03 14:47:19,502 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9LEC...\n"}
+,{"stream_name":"stderr","time":1905.844329984,"data":"\n"}
+,{"stream_name":"stderr","time":1905.844337639,"data":"2026-03-03 14:47:19,502 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9LEC...\n"}
+,{"stream_name":"stdout","time":1906.001936757,"data":"  Protenix OK: 9JFS  shapes=(6, 246, 3)-\u003e(6, 246, 3)\n"}
+,{"stream_name":"stderr","time":1906.366335536,"data":"2026-03-03 14:47:20,031 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1906.366396566,"data":"\n"}
+,{"stream_name":"stderr","time":1906.366402499,"data":"2026-03-03 14:47:20,031 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":1907.142437184,"data":"2026-03-03 14:47:20,808 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":1907.142470042,"data":"\n"}
+,{"stream_name":"stderr","time":1907.14247425,"data":"2026-03-03 14:47:20,808 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2072.757228132,"data":"2026-03-03 14:50:06,410 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9LEL...\n"}
+,{"stream_name":"stderr","time":2072.757275722,"data":"\n"}
+,{"stream_name":"stderr","time":2072.757282351,"data":"2026-03-03 14:50:06,410 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9LEL...\n"}
+,{"stream_name":"stdout","time":2072.847221444,"data":"  Protenix OK: 9LEC  shapes=(6, 378, 3)-\u003e(6, 378, 3)\n"}
+,{"stream_name":"stderr","time":2073.501052969,"data":"2026-03-03 14:50:07,166 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2073.501092071,"data":"\n"}
+,{"stream_name":"stderr","time":2073.501098434,"data":"2026-03-03 14:50:07,166 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2074.660996114,"data":"2026-03-03 14:50:08,326 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2074.661033016,"data":"\n"}
+,{"stream_name":"stderr","time":2074.661039574,"data":"2026-03-03 14:50:08,326 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2327.043326623,"data":"2026-03-03 14:54:20,700 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9I9W...\n"}
+,{"stream_name":"stderr","time":2327.043365329,"data":"\n"}
+,{"stream_name":"stderr","time":2327.04338811,"data":"2026-03-03 14:54:20,700 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9I9W...\n"}
+,{"stream_name":"stderr","time":2327.075088449,"data":"2026-03-03 14:54:20,740 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2327.075119857,"data":"\n"}
+,{"stream_name":"stderr","time":2327.075125166,"data":"2026-03-03 14:54:20,740 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stdout","time":2327.103265396,"data":"  Protenix OK: 9LEL  shapes=(6, 476, 3)-\u003e(6, 476, 3)\n"}
+,{"stream_name":"stderr","time":2327.1094942,"data":"2026-03-03 14:54:20,775 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2327.109516284,"data":"\n"}
+,{"stream_name":"stderr","time":2327.109520461,"data":"2026-03-03 14:54:20,775 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2371.433156833,"data":"2026-03-03 14:55:05,091 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9HRO...\n"}
+,{"stream_name":"stderr","time":2371.433191684,"data":"\n"}
+,{"stream_name":"stderr","time":2371.433197625,"data":"2026-03-03 14:55:05,091 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9HRO...\n"}
+,{"stream_name":"stderr","time":2371.473674712,"data":"2026-03-03 14:55:05,138 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2371.473724498,"data":"\n"}
+,{"stream_name":"stderr","time":2371.473730798,"data":"2026-03-03 14:55:05,138 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stdout","time":2371.509501845,"data":"  Protenix OK: 9I9W  shapes=(6, 28, 3)-\u003e(6, 28, 3)\n"}
+,{"stream_name":"stderr","time":2371.517116171,"data":"2026-03-03 14:55:05,183 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2371.517147153,"data":"\n"}
+,{"stream_name":"stderr","time":2371.517154052,"data":"2026-03-03 14:55:05,183 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2415.127920876,"data":"2026-03-03 14:55:48,785 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9QZJ...\n"}
+,{"stream_name":"stderr","time":2415.127959473,"data":"\n"}
+,{"stream_name":"stderr","time":2415.127965964,"data":"2026-03-03 14:55:48,785 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9QZJ...\n"}
+,{"stream_name":"stderr","time":2415.146645211,"data":"2026-03-03 14:55:48,812 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2415.146694658,"data":"\n"}
+,{"stream_name":"stderr","time":2415.146704302,"data":"2026-03-03 14:55:48,812 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2415.172314919,"data":"2026-03-03 14:55:48,837 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2415.172345091,"data":"\n"}
+,{"stream_name":"stderr","time":2415.172351624,"data":"2026-03-03 14:55:48,837 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":2415.304800109,"data":"  Protenix OK: 9HRO  shapes=(6, 35, 3)-\u003e(6, 35, 3)\n"}
+,{"stream_name":"stderr","time":2460.666784292,"data":"2026-03-03 14:56:34,323 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9JFO...\n"}
+,{"stream_name":"stderr","time":2460.66682394,"data":"\n"}
+,{"stream_name":"stderr","time":2460.66683033,"data":"2026-03-03 14:56:34,323 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9JFO...\n"}
+,{"stream_name":"stdout","time":2460.852298512,"data":"  Protenix OK: 9QZJ  shapes=(6, 19, 3)-\u003e(6, 19, 3)\n"}
+,{"stream_name":"stderr","time":2460.954538927,"data":"2026-03-03 14:56:34,619 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2460.954583769,"data":"\n"}
+,{"stream_name":"stderr","time":2460.954591024,"data":"2026-03-03 14:56:34,619 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2461.306706057,"data":"2026-03-03 14:56:34,971 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2461.306770188,"data":"\n"}
+,{"stream_name":"stderr","time":2461.306778477,"data":"2026-03-03 14:56:34,971 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2530.912076595,"data":"2026-03-03 14:57:44,570 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9OD4...\n"}
+,{"stream_name":"stderr","time":2530.912111765,"data":"\n"}
+,{"stream_name":"stderr","time":2530.912117543,"data":"2026-03-03 14:57:44,570 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9OD4...\n"}
+,{"stream_name":"stderr","time":2530.938702824,"data":"2026-03-03 14:57:44,603 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2530.938737993,"data":"\n"}
+,{"stream_name":"stderr","time":2530.938743054,"data":"2026-03-03 14:57:44,603 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2530.972072539,"data":"2026-03-03 14:57:44,637 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2530.972110111,"data":"\n"}
+,{"stream_name":"stderr","time":2530.972117717,"data":"2026-03-03 14:57:44,637 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":2531.0747797,"data":"  Protenix OK: 9JFO  shapes=(6, 195, 3)-\u003e(6, 195, 3)\n"}
+,{"stream_name":"stderr","time":2574.6627783,"data":"2026-03-03 14:58:28,321 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9WHV...\n"}
+,{"stream_name":"stderr","time":2574.662820938,"data":"\n"}
+,{"stream_name":"stderr","time":2574.662827077,"data":"2026-03-03 14:58:28,321 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9WHV...\n"}
+,{"stream_name":"stderr","time":2574.755348203,"data":"2026-03-03 14:58:28,420 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2574.755398504,"data":"\n"}
+,{"stream_name":"stderr","time":2574.755402637,"data":"2026-03-03 14:58:28,420 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stdout","time":2574.834197162,"data":"  Protenix OK: 9OD4  shapes=(6, 23, 3)-\u003e(6, 23, 3)\n"}
+,{"stream_name":"stderr","time":2574.851838842,"data":"2026-03-03 14:58:28,517 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2574.851876502,"data":"\n"}
+,{"stream_name":"stderr","time":2574.851881789,"data":"2026-03-03 14:58:28,517 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2619.026460293,"data":"2026-03-03 14:59:12,684 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9E74...\n"}
+,{"stream_name":"stderr","time":2619.026513259,"data":"\n"}
+,{"stream_name":"stderr","time":2619.02652061,"data":"2026-03-03 14:59:12,684 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9E74...\n"}
+,{"stream_name":"stdout","time":2619.212939498,"data":"  Protenix OK: 9WHV  shapes=(6, 80, 3)-\u003e(6, 80, 3)\n"}
+,{"stream_name":"stderr","time":2619.36048885,"data":"2026-03-03 14:59:13,026 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2619.360525396,"data":"\n"}
+,{"stream_name":"stderr","time":2619.360531198,"data":"2026-03-03 14:59:13,026 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2619.795407218,"data":"2026-03-03 14:59:13,460 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2619.795445013,"data":"\n"}
+,{"stream_name":"stderr","time":2619.795452403,"data":"2026-03-03 14:59:13,460 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2713.067367227,"data":"2026-03-03 15:00:46,724 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9E75...\n"}
+,{"stream_name":"stderr","time":2713.067410241,"data":"\n"}
+,{"stream_name":"stderr","time":2713.067417812,"data":"2026-03-03 15:00:46,724 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9E75...\n"}
+,{"stream_name":"stdout","time":2713.216186709,"data":"  Protenix OK: 9E74  shapes=(6, 255, 3)-\u003e(6, 255, 3)\n"}
+,{"stream_name":"stderr","time":2713.26730146,"data":"2026-03-03 15:00:46,932 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2713.26733834,"data":"\n"}
+,{"stream_name":"stderr","time":2713.267343925,"data":"2026-03-03 15:00:46,932 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2713.521667176,"data":"2026-03-03 15:00:47,186 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2713.521728728,"data":"\n"}
+,{"stream_name":"stderr","time":2713.521734469,"data":"2026-03-03 15:00:47,186 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2772.375267508,"data":"2026-03-03 15:01:46,032 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9KGG...\n"}
+,{"stream_name":"stderr","time":2772.375328356,"data":"\n"}
+,{"stream_name":"stderr","time":2772.375337016,"data":"2026-03-03 15:01:46,032 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9KGG...\n"}
+,{"stream_name":"stdout","time":2772.532158137,"data":"  Protenix OK: 9E75  shapes=(6, 165, 3)-\u003e(6, 165, 3)\n"}
+,{"stream_name":"stderr","time":2772.731940191,"data":"2026-03-03 15:01:46,397 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2772.731979002,"data":"\n"}
+,{"stream_name":"stderr","time":2772.731984859,"data":"2026-03-03 15:01:46,397 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2773.201726401,"data":"2026-03-03 15:01:46,867 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2773.201761431,"data":"\n"}
+,{"stream_name":"stderr","time":2773.201768787,"data":"2026-03-03 15:01:46,867 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2872.799521037,"data":"2026-03-03 15:03:26,455 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9EBP...\n"}
+,{"stream_name":"stderr","time":2872.799561203,"data":"\n"}
+,{"stream_name":"stderr","time":2872.799567934,"data":"2026-03-03 15:03:26,455 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/inference/infer_dataloader.py:281] INFO protenix.data.inference.infer_dataloader: Featurizing 9EBP...\n"}
+,{"stream_name":"stderr","time":2872.892462205,"data":"2026-03-03 15:03:26,557 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stderr","time":2872.892502663,"data":"\n"}
+,{"stream_name":"stderr","time":2872.89251186,"data":"2026-03-03 15:03:26,557 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/constraint/constraint_featurizer.py:392] INFO protenix.data.constraint.constraint_featurizer: Loaded constraint feature: #atom contact:0 #contact:0 #pocket:0\n"}
+,{"stream_name":"stdout","time":2872.965510815,"data":"  Protenix OK: 9KGG  shapes=(6, 267, 3)-\u003e(6, 267, 3)\n"}
+,{"stream_name":"stderr","time":2872.990741476,"data":"2026-03-03 15:03:26,656 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stderr","time":2872.990774864,"data":"\n"}
+,{"stream_name":"stderr","time":2872.990780407,"data":"2026-03-03 15:03:26,656 [/kaggle/input/protenix-v1-adjusted/Protenix-v1-adjust-v2/Protenix-v1-adjust-v2/Protenix-v1/protenix/data/template/template_featurizer.py:668] INFO protenix.data.template.template_featurizer: Calling InferenceTemplateFeaturizer.make_template_feature\n"}
+,{"stream_name":"stdout","time":2919.097766393,"data":"  Protenix OK: 9EBP  shapes=(6, 81, 3)-\u003e(6, 81, 3)\n"}
+,{"stream_name":"stdout","time":2919.097802028,"data":"  Done in 1690.8s  (23/23 OK)\n"}
+,{"stream_name":"stdout","time":2919.097808375,"data":"\n"}
+,{"stream_name":"stdout","time":2919.097813106,"data":"Protenix produced predictions for: 23 targets\n"}
+,{"stream_name":"stdout","time":2919.097817742,"data":"Targets without Protenix will use full TBM predictions.\n"}
+,{"stream_name":"stdout","time":2919.270221236,"data":"\n"}
+,{"stream_name":"stdout","time":2919.270257043,"data":"── Building submission ─────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":2919.270263253,"data":"  [ 1/28] 8ZNQ      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.270266647,"data":"  [ 2/28] 9IWF      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.270270345,"data":"  [ 3/28] 9JGM      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729281136,"data":"  [ 4/28] 9MME      TBM:5  Prot:0\n"}
+,{"stream_name":"stdout","time":2919.729350038,"data":"  [ 5/28] 9J09      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729357867,"data":"  [ 6/28] 9E9Q      TBM:5  Prot:0\n"}
+,{"stream_name":"stdout","time":2919.729364003,"data":"  [ 7/28] 9CFN      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729390334,"data":"  [ 8/28] 9OBM      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729394694,"data":"  [ 9/28] 9G4P      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729398652,"data":"  [10/28] 9G4Q      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729402106,"data":"  [11/28] 9G4R      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729404757,"data":"  [12/28] 9RVP      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.72940735,"data":"  [13/28] 9JFS      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729409966,"data":"  [14/28] 9LEC      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729412449,"data":"  [15/28] 9LEL      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729415022,"data":"  [16/28] 9I9W      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.72941751,"data":"  [17/28] 9HRO      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.72942007,"data":"  [18/28] 9QZJ      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729422562,"data":"  [19/28] 9JFO      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729425118,"data":"  [20/28] 9OD4      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729427625,"data":"  [21/28] 9WHV      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729430123,"data":"  [22/28] 9E74      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2919.729432657,"data":"  [23/28] 9E75      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2920.030805872,"data":"  [24/28] 9G4J      TBM:5  Prot:0\n"}
+,{"stream_name":"stdout","time":2920.0308417,"data":"  [25/28] 9KGG      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2920.030847504,"data":"  [26/28] 9EBP      TBM:3  Prot:2\n"}
+,{"stream_name":"stdout","time":2920.030851658,"data":"  [27/28] 9LJN      TBM:5  Prot:0\n"}
+,{"stream_name":"stdout","time":2920.030856071,"data":"  [28/28] 9ZCC      TBM:5  Prot:0\n"}
+,{"stream_name":"stdout","time":2920.223758788,"data":"\n"}
+,{"stream_name":"stdout","time":2920.223790398,"data":"Saved 9,762 rows -\u003e /kaggle/working/submission.csv\n"}
+,{"stream_name":"stdout","time":2920.223796982,"data":"       ID resname  resid       x_1        y_1        z_1        x_2       y_2       z_2        x_3        y_3       z_3       x_4        y_4        z_4       x_5       y_5        z_5\n"}
+,{"stream_name":"stdout","time":2920.223802192,"data":"0  8ZNQ_1       A      1 -3.108912 -20.329028   4.342609 -15.006932 -7.641978 -8.827907 -10.825930   7.787061  2.924649 -9.589144  15.725358  -5.798456  1.516890 -8.143573  17.765577\n"}
+,{"stream_name":"stdout","time":2920.223807125,"data":"1  8ZNQ_2       C      2 -1.340469 -18.411233   9.191268 -15.065714 -7.904556 -3.192673  -9.852475  10.025077  0.316630 -8.308748  11.382127  -8.561069  5.532000 -7.112738  14.452386\n"}
+,{"stream_name":"stdout","time":2920.223811982,"data":"2  8ZNQ_3       C      3  2.967723 -13.903596  10.923212 -10.433928 -9.242960  1.301872  -7.527901  13.944204 -4.059871 -4.718397   7.579317 -10.770520  8.269032 -7.711711   9.418847\n"}
+,{"stream_name":"stdout","time":2920.223817204,"data":"\n"}
+,{"stream_name":"stdout","time":2920.223822054,"data":"Done!\n"}
+,{"stream_name":"stderr","time":2925.47016789,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2925.470198699,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2925.634248716,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2925.634277354,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2926.269734451,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":2926.269766879,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":2926.29974481,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2926.658058533,"data":"[NbConvertApp] Writing 77982 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2929.275000477,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":2929.275040839,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":2929.300054514,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2930.368723294,"data":"[NbConvertApp] Writing 479351 bytes to __results__.html\n"}
+]
